@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&family=Rubik+Maps&display=swap');
+
+body{
+  background-color: rgb(255, 238, 213);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 95vh;
+  border: 2px solid rgb(193, 134, 45);
+  width: 80vw;
+  border-radius: 40px;
+  background: rgb(2,0,36);
+  background: linear-gradient(289deg, rgba(2,0,36,1) 0%, rgba(26,25,157,1) 58%, rgba(2,2,11,1) 100%, rgba(0,212,255,1) 100%);  border: none;
+}
+  #main-container {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 80vw;
+  }
+  
+  .question-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+
+.question-count{
+   text-align: center;
+   font-family: Rubik Maps;
+   font-size: 30px;
+   padding-bottom: 40px;
+   color: white;
+}
+.question-text{
+    text-align: center;
+   padding-bottom: 20px;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 20px;
+   color: white;
+
+}
+.answer-section{
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.answer-section button{
+    width: 250px;
+    height: 50px;    
+    margin-top: 20px;
+    padding: 10px 0 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 226, 222, 0.8);
+    color: blue;
+    font-size: 17px;
+    font-family: cursive;
+    font-weight: 600;
+    font-family: cursive;
+    cursor: pointer;
+    border: 1px solid rgb(73, 10, 211);
+}
+.answer-section button:hover{
+    opacity: 0.7;
+}
+
+.score-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+   font-family: Rubik Maps;
+  color: white;
+}
+.link-container{
+  margin-top: 50px;
+}
+.link-container a{
+  padding-top: 100px;
+  font-family: cursive;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(123, 255, 0)
+}
+.link-container a:hover{
+  text-decoration: underline;
+}
+.countdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+margin-top: -70px;
+margin-bottom: 50px;
+margin-left: 70vw;
+}
+
+.remaining-time {
+color: white;
+font-size: 19px;
+padding-left: 7px;
+}
+
+
+.score{
+margin-top: 20px;
+}
+
+@media (max-width:700px){
+  #app{
+      width: 100vw;
+  }
+h1.welcome{
+border-radius: unset;
+font-size: 25px;
+}
+h1.category-heading{
+  font-size: 17px;
+}
+.score-section{
+  font-size: 30px;
+}
+.question-text{
+  font-size: 17px;
+}
+}
